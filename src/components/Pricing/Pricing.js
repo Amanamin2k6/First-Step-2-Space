@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import AboutCard from "./AboutCards";
+import PricingCard from "./PricingCards";
 import Particle from "../Particle";
 
-function About() {
+function Pricing() {
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -16,7 +16,7 @@ function About() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <AboutCard
+            <PricingCard
               isBlog={false}
               title="Rocket Racer"
               description="
@@ -26,7 +26,7 @@ function About() {
           </Col>
 
           <Col md={4} className="project-card">
-            <AboutCard
+            <PricingCard
               isBlog={false}
               title="Deep Space Diver"
               description="
@@ -36,7 +36,7 @@ function About() {
           </Col>
 
           <Col md={4} className="project-card">
-            <AboutCard
+            <PricingCard
               title="Solar Sojourner"
               isBlog={false}
               description="
@@ -49,4 +49,4 @@ function About() {
   );
 }
 
-export default About;
+export default Pricing;

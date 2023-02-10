@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+import Pricing from "./components/Pricing/Pricing";
+import Planning from "./components/Planning/Planning";
 import Footer from "./components/Footer";
-
+import Safety from "./components/Safety/Safety";
+import Vehicles from "./components/Vehicles/Vehicles";
+import Launch from "./components/Launch/Launch";
 import {
   BrowserRouter as Router,
   Route,
@@ -25,10 +27,13 @@ function App() {
       upadateLoad(false);
     }, 1200);
 
+
     return () => clearTimeout(timer);
   }, []);
+  
 
   return (
+    
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
@@ -36,8 +41,11 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/planning-training" element={<Planning />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/launch-recovery" element={<Launch />} />
+          <Route path="/safety" element={<Safety />} />
+          <Route path="/vehicles" element={<Vehicles />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
