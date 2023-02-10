@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/avatarAstro.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -15,9 +15,6 @@ function Home() {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Ready for Lift off!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  🚀
-                </span>
               </h1>
 
               <h1 className="heading-name">
