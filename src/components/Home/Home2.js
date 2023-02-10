@@ -11,7 +11,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              FIRST <span className="purple"> STEP </span> 2
+              FIRST <span className="purple"> STEP </span> 2 SPACE
             </h1>
             <p className="home-about-body">
               BLAH
