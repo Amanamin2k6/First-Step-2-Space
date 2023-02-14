@@ -8,9 +8,11 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { SlRocket } from "react-icons/sl"
+import { TbAlertTriangle, TbParachute } from "react-icons/tb"
 
 import { CgFileDocument } from "react-icons/cg";
-
+import { IoIosPlanet, IoIosPricetags } from "react-icons/io";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -55,30 +57,17 @@ function NavBar() {
                 to="/pricing"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Pricing
+                <IoIosPricetags style={{ marginBottom: "2px" }} /> Pricing
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/planning-training"
+                to="/procedures"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Planning & Training
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/safety"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Safety
+                <TbAlertTriangle style={{ marginBottom: "2px" }} /> Procedures
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -87,7 +76,7 @@ function NavBar() {
                 to="/vehicles"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Vehicles
+                <SlRocket style={{ marginBottom: "2px" }} /> Vehicles
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -96,7 +85,16 @@ function NavBar() {
                 to="/launch-recovery"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Launch & Recovery
+                <TbParachute style={{ marginBottom: "2px" }} /> Launch & Recovery
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/documentation"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Docs
               </Nav.Link>
             </Nav.Item>
           </Nav>

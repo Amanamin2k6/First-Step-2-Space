@@ -2,20 +2,97 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
 
 function PricingCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" width= { 100} src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title> <span className="purple"> {props.title} </span></Card.Title>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center"}}>
+          {props.description21}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description3}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description4}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description5}
+        </Card.Text>
+        <Card.Text style={{ textAlign: "center" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description9}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description11}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description12}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description18}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description19}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center"}}>
+          {props.description20}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description1}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description2}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description7}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description8}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description10}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description13}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description14}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description15}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description16}
+        </Card.Text>
+        &nbsp;
+        <Card.Text style={{ textAlign: "center" }}>
+          {props.description17}
+        </Card.Text>
+        <Button variant="primary" href={props.ghLink} target="_blank"> Sign Up
         </Button>
         {"\n"}
         {"\n"}

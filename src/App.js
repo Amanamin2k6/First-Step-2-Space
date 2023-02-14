@@ -3,11 +3,11 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Pricing from "./components/Pricing/Pricing";
-import Planning from "./components/Planning/Planning";
 import Footer from "./components/Footer";
 import Safety from "./components/Safety/Safety";
 import Vehicles from "./components/Vehicles/Vehicles";
 import Launch from "./components/Launch/Launch";
+import 'react-chatbot-kit/build/main.css';
 import {
   BrowserRouter as Router,
   Route,
@@ -18,6 +18,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Docs from "./components/Documentation/docs";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -41,11 +42,11 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/planning-training" element={<Planning />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/launch-recovery" element={<Launch />} />
-          <Route path="/safety" element={<Safety />} />
+          <Route path="/procedures" element={<Safety />} />
           <Route path="/vehicles" element={<Vehicles />} />
+          <Route path="/documentation" element={<Docs />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
