@@ -15,7 +15,7 @@ function Docs(){
           </Row>
           <Row>
             <h2>Copyright Checklist</h2>
-            <iframe src="https://drive.google.com/file/d/1kNihHTdzGM2T006jVR9q2d8qs-3t5bML/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1tP_1aANa2xgukrdtv5n4TOdsHhuZj425/preview" width="640" height="480" allow="autoplay"></iframe>
           </Row>
         </Container>
       </Container>
