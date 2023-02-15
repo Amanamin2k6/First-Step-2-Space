@@ -17,7 +17,7 @@ function Docs(){
             <h2>Copyright Checklist</h2>
             <iframe src="https://drive.google.com/file/d/1tP_1aANa2xgukrdtv5n4TOdsHhuZj425/preview" width="640" height="480" allow="autoplay"></iframe>
           </Row>
-          <Row>
+          <Row style={{padding:50}}>
             <h5> We used Canva, Adobe Photoshop, Adobe Illustrator, and Adobe Photoshop Express to make our graphics. </h5>
             <h5>We used webflow as a tool to help us visualize our website.</h5>
             <h5>We used Reactjs, react-tsparticles, typewriter, and react-bootstrap to design our website </h5>
