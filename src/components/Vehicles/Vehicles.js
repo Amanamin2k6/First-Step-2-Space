@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import ChatbotButton from "../chatbot/Chatbot";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import fs2s1 from "../../Assets/ondeparture1.svg";
@@ -6,8 +7,30 @@ import fs2s2 from "../../Assets/fs2s2.png";
 import fs2s3 from "../../Assets/fs2f3.png";
 
 function Vehicles(){
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   return(
     <section>
+      <div style={{ position: 'relative' }}>
+        <button
+          style={{
+            position: 'fixed',
+            bottom: 20,
+            right: 20,
+          }}
+          onClick={() => setIsChatbotOpen(!isChatbotOpen)}
+        >
+          Open Chatbot
+        </button>
+        {isChatbotOpen && (
+          <div style={{
+            position: 'fixed',
+            bottom: 70,
+            right: 20,
+          }}>
+            <ChatbotButton />
+          </div>
+        )}
+        </div>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>

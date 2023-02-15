@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import ChatbotButton from "../chatbot/Chatbot";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import cabin from "../../Assets/cabin.svg";
@@ -8,14 +9,36 @@ import medical from "../../Assets/Medical Evaluation.png";
 import lanch from "../../Assets/lanch .png";
 import luggage from "../../Assets/luggage.png";
 function Saftey(){
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   return(
     <section>
+      <div style={{ position: 'relative' }}>
+        <button
+          style={{
+            position: 'fixed',
+            bottom: 20,
+            right: 20,
+          }}
+          onClick={() => setIsChatbotOpen(!isChatbotOpen)}
+        >
+          Open Chatbot
+        </button>
+        {isChatbotOpen && (
+          <div style={{
+            position: 'fixed',
+            bottom: 70,
+            right: 20,
+          }}>
+            <ChatbotButton />
+          </div>
+        )}
+        </div>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
             <Col md={12} style={{textAlign: "center" }}>
-              <h1>Procedures</h1>
-              <h4 className="purple">Planning | Training | Safety</h4>
+              <h1 className="purple"><strong>Procedures</strong></h1>
+              <h4>Planning | Training | Safety</h4>
             </Col>
           </Row>
           <Row>

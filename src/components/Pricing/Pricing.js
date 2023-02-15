@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import ChatbotButton from "../chatbot/Chatbot";
 import { Container, Row, Col } from "react-bootstrap";
 import PricingCard from "./PricingCards";
 import Particle from "../Particle";
@@ -8,12 +9,34 @@ import tier2 from "../../Assets/Deep-Space-Diver-icon.svg";
 import tier3 from "../../Assets/Solar-Sojourner.png";
 
 function Pricing() {
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   return (
     <section>
+      <div style={{ position: 'relative' }}>
+        <button
+          style={{
+            position: 'fixed',
+            bottom: 20,
+            right: 20,
+          }}
+          onClick={() => setIsChatbotOpen(!isChatbotOpen)}
+        >
+          Open Chatbot
+        </button>
+        {isChatbotOpen && (
+          <div style={{
+            position: 'fixed',
+            bottom: 70,
+            right: 20,
+          }}>
+            <ChatbotButton />
+          </div>
+        )}
+        </div>
       <Container fluid className="project-section">
         <Container>
           <h1 className="project-heading">
-            Tier <strong className="purple">Plans </strong>
+            <strong>Tier <span className="purple">Plans</span></strong>
           </h1>
           <p style={{ color: "white" }}>
             Here are the different plans we offer.
