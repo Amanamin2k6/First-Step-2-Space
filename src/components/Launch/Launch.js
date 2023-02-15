@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import rocketswing from "../../Assets/rocketswing.png";
-import logomin from "../../Assets/logomin.png";
 import parashoot from "../../Assets/parashoot.png";
 
 function Launch(){
