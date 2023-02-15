@@ -1,9 +1,7 @@
 import React, {useState} from "react";
-import ChatbotButton from "../chatbot/Chatbot";
+import ChatbotButton from "../chatbot/config";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import cabin from "../../Assets/cabin.svg";
-import departure from "../../Assets/ondeparture1.svg";
 import training from "../../Assets/training.svg";
 import medical from "../../Assets/Medical Evaluation.png";
 import lanch from "../../Assets/lanch .png";

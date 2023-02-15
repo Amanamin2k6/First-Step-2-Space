@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-const halfwidth = window.screen.width / 2
 function Docs(){
     return(
         <section>

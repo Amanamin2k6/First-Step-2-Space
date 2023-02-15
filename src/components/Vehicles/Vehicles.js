@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import ChatbotButton from "../chatbot/Chatbot";
+import ChatbotButton from "../chatbot/config";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import fs2s1 from "../../Assets/ondeparture1.svg";

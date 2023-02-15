@@ -4,7 +4,7 @@ import homeLogo from "../../Assets/avatarAstro.png";
 import Particle from "../Particle";
 import Type from "./Type";
 import frontpage from "../../Assets/frontpage.png";
-import ChatbotButton from "../chatbot/Chatbot";
+import ChatbotButton from "../chatbot/config";
 import logomin from "../../Assets/logomin.png"
 import Tilt from "react-parallax-tilt";
 
