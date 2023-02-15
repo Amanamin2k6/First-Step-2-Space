@@ -190,7 +190,7 @@ button:focus {
 
 .navbar-nav .nav-item a {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 20px;
   transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 1;

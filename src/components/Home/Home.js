@@ -46,7 +46,7 @@ function Home() {
               
               <div className="Type"> <Type/> </div>
             </Col>
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 20 }} className="wave">
               <img
                 src={frontpage}
                 alt="home pic"
@@ -66,7 +66,7 @@ function Home() {
               
             </Col>
             <Col md={6} style={{ paddingTop: 20 }}>
-              <h1 style={{ padding: 50, textAlign: "right", }} className="heading">
+              <h1 style={{ padding: 150, textAlign: "right", }} className="heading">
               <em>"Beyond <span className="purple">Earth</span>, Beyond <span className="purple">Imagination</span>"</em>{" "}
               </h1>
             </Col>
