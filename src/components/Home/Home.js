@@ -2,12 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/avatarAstro.png";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
 import frontpage from "../../Assets/frontpage.png";
 import ChatbotButton from "../chatbot/Chatbot";
-import earthhome from "../../Assets/earth-fhomepage.png";
-import styled from 'styled-components';
 import logomin from "../../Assets/logomin.png"
 import Tilt from "react-parallax-tilt";
 
@@ -51,7 +48,7 @@ function Home() {
             </Col>
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={frontpage}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
@@ -61,7 +58,7 @@ function Home() {
           <Row>
           <Col md={6} style={{ paddingBottom: 20 }}>
               <img
-                src={frontpage}
+                src={homeLogo}
                 alt="front pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
