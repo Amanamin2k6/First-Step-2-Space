@@ -11,17 +11,7 @@ function Launch(){
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row style={{paddingBottom: 50}}>
-            <h1 className="heading" style={{textAlign: "center"}}> <strong>Launch and Recovery</strong></h1>
-          </Row>
-          <Row style={{paddingBottom: 50}}>
-            <Col md={4}>
-              <img src={logomin} alt="Seat"></img>
-            </Col>
-            <Col md={8}>
-              <h3 className="purple">Motto</h3>
-              <p>At every step of the way, our team is dedicated to providing a safe, comfortable, and unforgettable space travel experience.</p>
-              <p>Join us on the adventure of a lifetime and book your space tourism trip today!</p>
-            </Col>
+            <h1 className="heading" style={{textAlign: "center"}}> <strong><span className="purple">Launch</span> and <span className="purple">Recovery</span></strong></h1>
           </Row>
           <Row>
             <Col md={4}>
