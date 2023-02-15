@@ -9,30 +9,8 @@ import logomin from "../../Assets/logomin.png"
 import Tilt from "react-parallax-tilt";
 
 function Home() {
-  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   return (
     <section>
-     <div style={{ position: 'relative' }}>
-      <button
-        style={{
-          position: 'fixed',
-          bottom: 20,
-          right: 20,
-        }}
-        onClick={() => setIsChatbotOpen(!isChatbotOpen)}
-      >
-        Open Chatbot
-      </button>
-      {isChatbotOpen && (
-        <div style={{
-          position: 'fixed',
-          bottom: 70,
-          right: 20,
-        }}>
-          <ChatbotButton />
-        </div>
-      )}
-    </div>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
@@ -56,7 +34,7 @@ function Home() {
             </Col>
           </Row>
           <Row>
-          <Col md={6} style={{ paddingBottom: 20 }}>
+          <Col md={6} style={{ padding: 20 }}>
               <img
                 src={homeLogo}
                 alt="front pic"
@@ -66,7 +44,7 @@ function Home() {
               
             </Col>
             <Col md={6} style={{ paddingTop: 20 }}>
-              <h1 style={{ padding: 150, textAlign: "right", }} className="heading">
+              <h1 style={{ padding: 80, textAlign: "right", }} className="heading">
               <em>"Beyond <span className="purple">Earth</span>, Beyond <span className="purple">Imagination</span>"</em>{" "}
               </h1>
             </Col>

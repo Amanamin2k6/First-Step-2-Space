@@ -92,7 +92,7 @@ function PricingCards(props) {
         <Card.Text style={{ textAlign: "center" }}>
           {props.description17}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank"> Sign Up
+        <Button variant="primary" href={props.ghLink} target="_blank"> {props.price}
         </Button>
         {"\n"}
         {"\n"}

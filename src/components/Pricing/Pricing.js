@@ -44,6 +44,7 @@ function Pricing() {
                 description18="Special events and meet-and-greets  ✕​​"
                 description19="Free WIFI  ✕​​"
                 description20="Space Walks ✕​​"
+                price="$20,000"
               />
             </Col>
 
@@ -73,6 +74,7 @@ function Pricing() {
                 description18="Special events and meet-and-greets ✓​"
                 description19="Free WIFI ✓​"
                 description20="Space Walks 30min ✓​"
+                price="$80,000"
               />
             </Col>
 
@@ -101,6 +103,7 @@ function Pricing() {
                 description18="Special events and meet-and-greets ✓​"
                 description19="Free WIFI ✓​"
                 description20="Exclusive Space Walks 1hr+ ✓​"
+                price="$500,000"
               />
             </Col>
           </Row>

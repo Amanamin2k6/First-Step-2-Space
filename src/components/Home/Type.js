@@ -13,7 +13,7 @@ function Type() {
           "Cosmic Cruiser",
           "Galaxy Explorer",
           "Star Jumper",
-          "Meteor Mission",
+          "Meteor Missionare",
           "Nebula Navigator",
           "Celestial Voyager",
           "Cosmic Conqueror",
@@ -25,7 +25,7 @@ function Type() {
           "Planetary Prober",
           "Black Hole Blazer",
           "Meteor Magi",
-          "Alien Adventure",
+          "Alien Adventurer",
           "Supernova Sojourner"
         ],
         autoStart: true,

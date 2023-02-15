@@ -7,30 +7,8 @@ import medical from "../../Assets/Medical Evaluation.png";
 import lanch from "../../Assets/lanch .png";
 import luggage from "../../Assets/luggage.png";
 function Saftey(){
-  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
   return(
     <section>
-      <div style={{ position: 'relative' }}>
-        <button
-          style={{
-            position: 'fixed',
-            bottom: 20,
-            right: 20,
-          }}
-          onClick={() => setIsChatbotOpen(!isChatbotOpen)}
-        >
-          Open Chatbot
-        </button>
-        {isChatbotOpen && (
-          <div style={{
-            position: 'fixed',
-            bottom: 70,
-            right: 20,
-          }}>
-            <ChatbotButton />
-          </div>
-        )}
-        </div>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
