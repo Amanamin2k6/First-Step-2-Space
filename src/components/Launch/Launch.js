@@ -15,7 +15,7 @@ function Launch(){
           style={{
             position: 'fixed',
             bottom: 20,
-            right: 20,
+            right: 50,
           }}
           onClick={() => setIsChatbotOpen(!isChatbotOpen)}
         >

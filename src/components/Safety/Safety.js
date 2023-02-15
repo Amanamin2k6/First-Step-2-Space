@@ -46,24 +46,13 @@ function Saftey(){
             <Col md={8}>
             <p className="home-about-body" style={{textAlign: "center"}}> Our space tourism company offers you the chance to experience suborbital and orbital space travel. We prioritize your safety greatly, which is why we require extensive training and medical evaluations before any spaceflight with us. Here's what you can expect as you prepare for your once-in-a-lifetime experience with us. - FS2S</p>
             </Col>
-            <Col md={2}/>
+            
           </Row>
           <Row>
 
           </Row>
           <Row style={{padding : 50}}>
 
-          </Row>
-          <Row>
-            <Col md={1} />
-            <Col md={4}>
-              <img src= {departure} alt="Before Departure" ></img>
-            </Col>
-            <Col md={2} />
-            <Col md={4}> 
-              <img src= {cabin} alt="On board" ></img>
-            </Col>
-            <Col md={1} />
           </Row>
           <Row>
             <Col md={12} className="home-header">

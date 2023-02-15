@@ -4,8 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import PricingCard from "./PricingCards";
 import Particle from "../Particle";
 
-import tier1 from "../../Assets/rocket-racer-icon.svg";
-import tier2 from "../../Assets/Deep-Space-Diver-icon.svg";
+import tier1 from "../../Assets/rocket-racer.png";
+import tier2 from "../../Assets/Deep-Space-Diver.png";
 import tier3 from "../../Assets/Solar-Sojourner.png";
 
 function Pricing() {
